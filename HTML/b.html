@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      table ,td,thead{
+      table,
+      td,
+      tr,
+      thead {
         border: 1px solid black;
         border-collapse: collapse;
       }
@@ -105,23 +108,32 @@
     </ul>
 
     <!-- TABLE -->
-    <table style="border: 2px solid black;">
-      <thead>
+    <table>
+      <caption>
         this is head
+      </caption>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
       </thead>
-      <tr>
-        <td>Month</td>
-        <td>Savings</td>
-      </tr>
-      <tr>
-        <td>January</td>
-        <td>20th</td>
-      </tr>
-      <tr>
-        <td>dec</td>
-        <td>13th</td>
-      </tr>
-      
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>20th</td>
+        </tr>
+        <tr>
+          <td>dec</td>
+          <td>13th</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>10</td>
+        </tr>
+      </tfoot>
     </table>
   </body>
 </html>
