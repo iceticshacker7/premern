@@ -1,0 +1,21 @@
+.small {
+    font-size: small;
+  }
+  .big {
+    font-size: larger;
+    background-color: blueviolet;
+    display: block;
+  }
+  button:hover {
+    color: aquamarine;
+  }
+  .link-color:hover {
+    color: rgb(5, 79, 79);
+  }
+  #linkcolor:hover {
+    color: bisque;
+    background-color: rgb(170, 102, 0);
+  }
+  p {
+    text-shadow: 12px  rgb(108, 41, 41);
+  }
