@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table,
+      td,
+      tr,
+      th,
+      thead {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Month</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tr>
+        <th rowspan="2" style="text-align: left">Jan</th>
+        <td>1000</td>
+        <td>1200</td>
+      </tr>
+      <tr>
+        <!-- <th>feb</th> -->
+        <td>1200</td>
+      </tr>
+      <tr>
+        <th>May</th>
+        <td>2002</td>
+      </tr>
+      <tr>
+        <th>Total</th>
+        <td>7000</td>
+      </tr>
+    </table>
+    <!-- second table -->
+    <br>
+    <table>
+        <colgroup>
+        <col span="1" style="background-color: rgb(69, 149, 122);">
+        <col span="1" style="background-color: aquamarine;">
+        <col span="1" style="background-color: rgb(95, 95, 127);">
+        </colgroup>
+      <tr>
+        <td rowspan="2">State of Health</td>
+        <td colspan="2">Fasting value</td>
+        <td>After eating</td>
+      </tr>
+      <tr>
+        <td>Minimum</td>
+        <td>Maximum</td>
+        <td>2 hours after eating</td>
+      </tr>
+      <tr>
+        <td>Healthy</td>
+        <td>70</td>
+        <td>100</td>
+        <td>Less than 140</td>
+      </tr>
+      <tr>
+        <td>Prediabetes</td>
+        <td>101</td>
+        <td>128</td>
+        <td>140 to 200</td>
+      </tr>
+      <tr>
+        <td>Diabetes</td>
+        <td>Moret than 126 </td>
+        <td>N/A</td>
+        <td>More than 200</td>
+      </tr>
+    </table>
+    <ol type="i">
+        <li style="list-style: none;"> "hi there"</li>
+    </ol>
+  </body>
+</html>
