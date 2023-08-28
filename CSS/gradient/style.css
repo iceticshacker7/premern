@@ -1,0 +1,47 @@
+.box {
+  border: 1px solid black;
+  height: 200px;
+  width: 150px;
+  background-image: linear-gradient(red, blue);
+  background-image: linear-gradient(to left, red, blue, green);
+  background-image: linear-gradient(to bottom, orange, white, green);
+}
+.box4{
+    border: 2px solid black;
+    min-height: 100px;
+}
+p {
+  color: rgb(46, 9, 166);
+  text-shadow: 2px 3px 3px rgb(70, 70, 250);
+}
+.box3{
+    border: 2px solid violet;
+    max-height: 50px;
+    overflow: scroll;
+}
+.mydiv {
+  border: 1px solid black;
+  margin: 10px;
+  height: 400px;
+  width: 500px;
+  background-image: radial-gradient(
+    circle,
+    rgb(255, 255, 255),
+    rgb(0, 0, 0),
+    rgb(242, 236, 225)
+  );
+  background-image: radial-gradient(circle, red 20%, yellow 25%, green 30%);
+}
+.cone {
+  border: 1px solid black;
+  margin: 10px;
+  height: 400px;
+  width: 500px;
+  background-image: conic-gradient(green, yellow, black);
+}
+.box2 {
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+  box-shadow: 2px 2px 10px green,-2px -2px 10px yellowgreen;
+}
