@@ -3,44 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PARALLAX</title>
+    <title>Document</title>
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
+      #wrapper {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 10px;
+      }
       .container {
         position: relative;
-        height: 100vh;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         transform-style: preserve-3d;
         z-index: -1;
       }
-
-      .container img {
+      .container h1 {
         position: absolute;
-        height: 100vh;
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px wheat;
+        font-size: 9rem;
+        top: 3rem;
+      }
+      .background {
+        transform: translateZ(-40px) scale(5);
+      }
+      .foreground {
+        transform: translateZ(-20px) scale(3);
+      }
+      .background,
+      .foreground {
+        position: absolute;
+        height: 100%;
         width: 100%;
         object-fit: cover;
         z-index: -1;
       }
-
-      #background {
-        transform: translateZ(-39px) scale(5);
-      }
-
-      #foreground {
-        transform: translateZ(-20px) scale(3);
-      }
     </style>
   </head>
   <body>
-    <div class="container">
-      <img src="background.png" alt="" class="background" />
-      <img src="foreground.png" alt="" class="foreground" />
+    <div id="wrapper">
+      <div class="container">
+        <img src="background.png" alt="" class="background" />
+        <img src="foreground.png" alt="" class="foreground" />
+        <h1>ADVENTURE</h1>
+      </div>
+      <section>
+        <h2>Adventure Time</h2>
+        <p class="txt">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque
+          hic tempore rem eveniet sed repudiandae molestiae magnam aut quod
+          consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis
+          quod similique fugiat fugit ea expedita deleniti doloribus, delectus
+          perferendis, tempore amet maiores libero sapiente voluptatem
+          reprehenderit? Illum alias commodi cupiditate corporis mollitia ab
+          quaerat, ipsum est excepturi vitae a sunt optio.
+          <br /><br />
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
+          necessitatibus commodi alias? Veritatis, eligendi nisi. Amet
+          exercitationem, recusandae dolore corrupti laborum aperiam repellendus
+          natus voluptatem quam atque aliquam beatae. Odit deserunt nisi optio
+          eveniet? Aliquam possimus molestiae, ullam illum accusamus autem
+          accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam
+          eaque autem labore provident dolorum, velit omnis mollitia eos
+          adipisci!
+        </p>
+      </section>
     </div>
   </body>
 </html>
