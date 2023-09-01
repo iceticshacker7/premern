@@ -1,0 +1,44 @@
+.container {
+  width: 300px;
+  display: flex;
+  position: relative;
+  height: 200px;
+  background-color: yellowgreen;
+  transform: translateZ(-1);
+  justify-content: center;
+  /* rotate: -45deg; */
+}
+.box {
+  width: 0px;
+  left:0;
+  position: absolute;
+  height: 200px;
+  background-color: green;
+  animation-name: name;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  /* transform: translateZ(-1); */
+}
+.b2 {
+  position: fixed;
+  color: red;
+  align-self: center;
+  font-size: 50px;
+  /* top: 25px; */
+  left: 59px;
+  /* background-color: aqua; */
+}
+@keyframes name {
+  from {
+    background-color: bisque;
+
+    width: 0px;
+  }
+  to {
+    background-color: bisque;
+    width: 300px;
+  }
+}

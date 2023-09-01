@@ -1,0 +1,58 @@
+
+body{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.container{
+    border: 1px solid brown;
+    background-color: rgb(148, 12, 12);
+    height: 500px;
+    width: 600px;
+    
+    display:grid;
+    grid-template-columns: repeat(5,100px);
+    grid-template-rows: (3,100px);
+    justify-content: space-between;
+    gap: 10px;
+    row-gap: 10px;
+}
+:root{
+    --dark-red:rgb(212, 234, 47);
+}
+.box{
+    background-color: var(--dark-red);
+}
+.box2{
+    /* transition-property: all; */
+    background-color: aqua;
+    transition: background-color 0.1s ease 0.1s;
+    height: 100px;
+    width: 100px;
+}
+.box2:hover{
+    transform: rotate(45deg);
+    background-color: rgb(14, 17, 186);
+}
+
+.box3{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    transition:  transform 2s ease-out 0.1s;
+}
+.box3:hover{
+    transform: translateX(600%) rotate(180deg);
+}
+.box4{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    align-self: end;
+    /* transition: all; */
+    transition:   transform 3s cubic-bezier(0.98,-0.21, 0.1, 1.1);
+}
+.box4:hover{
+    transform: translateY(-600%);
+    background-color: aquamarine;
+}
